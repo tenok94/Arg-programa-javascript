@@ -86,6 +86,9 @@ nav{
 	transform: translateX(40rem);
 }
 /*-----------------------------Main---------------------------------------------*/
+.flecha:hover{
+    width: 75px;
+}
 .navar-big{
     display: flex;
     justify-content: space-around;
