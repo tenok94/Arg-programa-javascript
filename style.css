@@ -9,16 +9,15 @@ body {
     background-color: #fff;
 }
 
-/* .logo-RAE{
-    width: 25%;
-    padding-left: 10px;
-} */
+.logo-RAE{
+    margin-left: 20px;
+}
 
 a{
     list-style:none;
     text-decoration: none;
     color: inherit;
-    padding-left: 70px;
+    /* padding-left: 70px; */
 }
 
 /* .btn, .btn-1{
@@ -87,12 +86,16 @@ nav{
 	transform: translateX(40rem);
 }
 /*-----------------------------Main---------------------------------------------*/
-
+.navar-big{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #74C8FC;
+}
 /*-----------------------------Footer---------------------------------------------*/
 footer{
-    position: absolute;
+    height: 86px;
     width: 100%;
-    bottom: 0;
     background-color: #ffd803;
 }
 .footer-container{
