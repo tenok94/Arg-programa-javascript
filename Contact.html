@@ -21,7 +21,7 @@
                     <a href="./Home.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Events</a>
+                    <a href="./UpcomingEvents.html" class="nav-link">Events</a>
                 </li>
                 <li class="nav-item">
                     <a href="./PastEvents.html" class="nav-link">Past Events</a>
@@ -39,88 +39,37 @@
     </header>
     <div class="navar-big">
         <div class="a-flecha">
-            <a href="./Home.html">
+            <a href="./PastEvents.html">
                 <img class="flecha" src="./img/Resources Amazing Events/flecha-izquierda.png" alt="">
             </a>
         </div>
         <div class="titulo">
-            <h2>UpComing Events</h2>
+            <h2>Contact</h2>
         </div>
         <div class="a-flecha">
-            <a href="./PastEvents.html">
+            <a href="./Stats.html">
                 <img class="flecha" src="./img/Resources Amazing Events/flecha-derecha.png" alt="">
             </a>
         </div>
     </div>
-    <div class="container">
-        <div class="d-flex align-items-baseline">
-            <div class="col-6 d-flex justify-content-between">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria">
-                    <label class="form-check-label" for="categoria">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria">
-                    <label class="form-check-label" for="categoria">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria">
-                    <label class="form-check-label" for="categoria">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria">
-                    <label class="form-check-label" for="categoria">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria">
-                    <label class="form-check-label" for="categoria">categoria</label>
-                </div>
-            </div>
-            <div class="col-6 d-flex justify-content-end p-2">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
-            </div>
-        </div>
-    </div>
     <main>
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between p-3 gap-4">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Resources Amazing Events/Costume_Party.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+        <h2 class="h2-main">Formulario</h2>
+            <form class=" p-5" action="./show-data.html" method="get">
+                <div class="form-group p-2 w-50">
+                  <label for="input-email">Email address:</label>
+                  <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Resources Amazing Events/Costume_Party.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="form-group p-2 w-50">
+                  <label for="input-name">Name:</label>
+                  <input type="text" class="form-control" id="input-name" placeholder="Enter Name">
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Resources Amazing Events/Costume_Party.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="form-group p-2 w-50">
+                    <label for="mensagge">Mensagge:</label>
+                    <textarea class="form-control" id="mensagge" rows="3"></textarea>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/Resources Amazing Events/Costume_Party.jpg " alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>  
-            </div>
-            
-        </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
     </main>
     <footer>
         <div class="footer-container">
