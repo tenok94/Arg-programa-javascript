@@ -1,0 +1,14 @@
+/* .card-body{
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #ede9e7;
+    text-align: center;
+    padding: 30px;
+    color: #018980;
+    box-shadow: 3px 3px 10px #ccc;
+} */
+
+.card{
+    margin: 50px;
+}

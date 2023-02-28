@@ -172,6 +172,39 @@ var data = {
     ]
   };
   
+  /* resta 1 día a la fecha */
+
+  /* const currentDate = new Date(data.currentDate);
+  console.log(currentDate) */
+
+  
+  let currentDate = new Date(data.currentDate)
+  currentDate.setMinutes(currentDate.getMinutes() + currentDate.getTimezoneOffset())
+  /* console.log(currentDate) */
+
+  let pastEvents = [];
+  let upcomingEvents = [];
+
+  data.events.forEach(event => {
+    const eventDate = new Date(event.date);
+  
+    if (eventDate < currentDate) {
+      pastEvents.push(event);
+    } else {
+      upcomingEvents.push(event);
+    }
+  });
+
+  /* console.log(upcomingEvents); */
+
+  const upcomingEventsContainer = document.getElementById("upcoming-events-container");
+  const pastEventsContainer = document.getElementById("past-events-container");
+
+  upcomingEvents.forEach(event => {
+    const eventCardHtml = createEventCard(event);
+      upcomingEventsContainer.innerHTML += eventCardHtml;
+});
+
   function createEventCard(event) {
     return `
       <div class="card">
@@ -191,10 +224,3 @@ var data = {
       </div>
     `;
   }
-
-  const eventsContainer = document.getElementById('events-container');
-    data.events.forEach(event => {
-      const eventCardHtml = createEventCard(event);
-        eventsContainer.innerHTML += eventCardHtml;
-});
-
