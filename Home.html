@@ -54,39 +54,32 @@
     </div>
     <div class="container">
         <div class="d-flex align-items-baseline">
-            <div class="col-6 d-flex justify-content-between">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria1">
-                    <label class="form-check-label" for="categoria1">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria2">
-                    <label class="form-check-label" for="categoria2">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria3">
-                    <label class="form-check-label" for="categoria3">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria4">
-                    <label class="form-check-label" for="categoria4">categoria</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="categoria5">
-                    <label class="form-check-label" for="categoria5">categoria</label>
-                </div>
-            </div>
-            <div class="col-6 d-flex justify-content-end p-2">
+            <div id="category-filter">
+                <label><input type="checkbox" name="category" value="Food Fair"> Food Fair</label>
+                <label><input type="checkbox" name="category" value="Museum"> Museum</label>
+                <label><input type="checkbox" name="category" value="Costume Party"> Costume Party</label>
+                <label><input type="checkbox" name="category" value="Music Concert"> Music Concert</label>
+                <label><input type="checkbox" name="category" value="Race"> Race</label>
+                <label><input type="checkbox" name="category" value="Book Exchange"> Book Exchange</label>
+              </div>              
+            <!-- <div class="col-6 d-flex justify-content-end p-2">
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                   </form>
-            </div>
+            </div> -->
         </div>
+<!--         <form>
+			<div class="form-group">
+				<input type="text" class="form-control" id="search-button" placeholder="Introduce tu búsqueda">
+			</div>
+			<button type="submit" class="btn btn-primary" id="search-button">Buscar</button>
+		</form> -->
     </div>
     <main>
-        <div class="container" id="events-container">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="events-container">
         </div>
         <script src="./script/data.js"></script>
+        <script src="./script/home.js"></script>
     </main>
     <footer>
         <div class="footer-container">
